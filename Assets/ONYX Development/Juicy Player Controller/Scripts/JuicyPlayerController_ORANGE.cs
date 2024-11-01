@@ -36,18 +36,18 @@ namespace ONYX {
         [SerializeField] private float ground_distance = 0.4f;
 
         [Header ("Debug (read-only)")]
-        [ReadOnly, SerializeField] private PlayerState state;
-        [ReadOnly, SerializeField] private Vector3 velocity;
-        [ReadOnly, SerializeField] private float speed;
-        [ReadOnly, SerializeField] private float height;
-        [ReadOnly, SerializeField] private float stamina;
-        [ReadOnly, SerializeField] private bool is_grounded;
-        [ReadOnly, SerializeField] private Transform camera_container;
-        [ReadOnly, SerializeField] private Transform ground_check;
-        [ReadOnly, SerializeField] private LayerMask ground_mask;
-        [ReadOnly, SerializeField] private CharacterController controller;
-        [ReadOnly, SerializeField] private float cam_x_rotation;
-        [ReadOnly, SerializeField] private bool all_checks_passed;
+        [SerializeField] private PlayerState state;
+        [SerializeField] private Vector3 velocity;
+        [SerializeField] private float speed;
+        [SerializeField] private float height;
+        [SerializeField] private float stamina;
+        [SerializeField] private bool is_grounded;
+        [SerializeField] private Transform camera_container;
+        [SerializeField] private Transform ground_check;
+        [SerializeField] private LayerMask ground_mask;
+        [SerializeField] private CharacterController controller;
+        [SerializeField] private float cam_x_rotation;
+        [SerializeField] private bool all_checks_passed;
 
         private Vector2 move_input;
         private Vector2 look_input;
